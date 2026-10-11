@@ -117,7 +117,7 @@ body:has(.portfolio) {
       transform: translateX(-50%);
       width: 40px;
       height: 8px;
-      background: #60c864;
+      background: var(--portfolio-green);
       border-radius: 8px;
       @include sp {
         width: 24px;
@@ -150,9 +150,10 @@ body:has(.portfolio) {
   }
 
   .heading_04 {
-    color: #60c864;
+    color: var(--portfolio-green);
     font-weight: $fw-b;
     margin-bottom: 16px;
+    margin-top: 40px;
   }
 
   ul + h4 {
@@ -164,11 +165,11 @@ body:has(.portfolio) {
   }
 
   .linktext {
-    color: #60c864;
-    border-bottom: 1px solid #60c864;
+    color: var(--portfolio-green);
+    border-bottom: 1px solid var(--portfolio-green);
   }
   .label {
-    background: #60c864;
+    background: var(--portfolio-green);
     color: #fff;
     border-radius: 4px;
     padding: 2px 8px;
@@ -249,7 +250,7 @@ body:has(.portfolio) {
 
       &:hover {
         opacity: 1;
-        color: #60c864;
+        color: var(--portfolio-green);
       }
 
       // &:hover::after {
@@ -313,7 +314,7 @@ body:has(.portfolio) {
       border-radius: 4px;
 
       // color: var(--nav-fg);
-      background: #60c864;
+      background: #fff;
       transition:
         transform var(--speed),
         opacity var(--speed);
@@ -331,7 +332,7 @@ body:has(.portfolio) {
         top: 1rem;
         right: 1rem;
         @include flex(center, center, column, 4px);
-        background: #fff;
+        background: var(--portfolio-green);
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -485,6 +486,7 @@ body:has(.portfolio) {
     }
   }
   &__item {
+    list-style: none;
     position: relative;
     padding-left: 28px;
     @include sp {
@@ -505,7 +507,7 @@ body:has(.portfolio) {
       width: 16px;
       height: 4px;
       border-radius: 8px;
-      background: #60c864;
+      background: var(--portfolio-green);
       top: 13px;
       left: 0;
       transform: translateY(-50%);
@@ -514,6 +516,19 @@ body:has(.portfolio) {
         height: 3px;
         top: 12px;
       }
+    }
+  }
+
+  .project {
+    &__heading {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+    &__about{
+      margin-bottom: 12px;
+      padding: 16px;
+      border-top: 1px dotted #94b49e;
+      font-size: r(14);
     }
   }
 
