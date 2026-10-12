@@ -30,7 +30,10 @@
   --boxshadow: 8px 16px 30px rgba(0, 0, 0, 0.1);
 
   // ?ポートフォリオ
-  --portfolio-green:#1e8821;
+  --portfolio-green:#1f8676;
+  --portfolio-green-light:#d5f6ea;
+  --portfolio-bg:var(--portfolio-green-light);
+  --portfolio-main-color:var(--portfolio-green);
 }
 /* 実高さに合わせて調整 */
 [id] {

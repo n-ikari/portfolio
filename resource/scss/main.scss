@@ -17,7 +17,7 @@ body:has(.portfolio) {
   font-family: $main-ja;
   font-size: $font-size-base;
   line-height: 1.6;
-  background: #f1f9f6;
+  background: var(--portfolio-bg);
   color: #333;
   @include sp {
     font-size: r(14);
@@ -117,7 +117,7 @@ body:has(.portfolio) {
       transform: translateX(-50%);
       width: 40px;
       height: 8px;
-      background: var(--portfolio-green);
+      background: var(--portfolio-main-color);
       border-radius: 8px;
       @include sp {
         width: 24px;
@@ -150,7 +150,7 @@ body:has(.portfolio) {
   }
 
   .heading_04 {
-    color: var(--portfolio-green);
+    color: var(--portfolio-main-color);
     font-weight: $fw-b;
     margin-bottom: 16px;
     margin-top: 40px;
@@ -165,16 +165,17 @@ body:has(.portfolio) {
   }
 
   .linktext {
-    color: var(--portfolio-green);
-    border-bottom: 1px solid var(--portfolio-green);
+    color: var(--portfolio-main-color);
+    border-bottom: 1px solid var(--portfolio-main-color);
   }
   .label {
-    background: var(--portfolio-green);
-    color: #fff;
-    border-radius: 4px;
     padding: 2px 8px;
+    border-radius: 100vw;
     font-weight: $fw-m;
     font-size: 0.8em;
+    // border: 1px solid var(--portfolio-main-color);
+    color: var(--portfolio-main-color);
+    background: var(--portfolio-bg);
   }
 
   .header {
@@ -250,7 +251,7 @@ body:has(.portfolio) {
 
       &:hover {
         opacity: 1;
-        color: var(--portfolio-green);
+        color: var(--portfolio-main-color);
       }
 
       // &:hover::after {
@@ -332,7 +333,7 @@ body:has(.portfolio) {
         top: 1rem;
         right: 1rem;
         @include flex(center, center, column, 4px);
-        background: var(--portfolio-green);
+        background: var(--portfolio-main-color);
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -507,7 +508,7 @@ body:has(.portfolio) {
       width: 16px;
       height: 4px;
       border-radius: 8px;
-      background: var(--portfolio-green);
+      background: var(--portfolio-main-color);
       top: 13px;
       left: 0;
       transform: translateY(-50%);
@@ -524,10 +525,10 @@ body:has(.portfolio) {
       margin-top: 20px;
       margin-bottom: 12px;
     }
-    &__about{
+    &__about {
       margin-bottom: 12px;
       padding: 16px;
-      border-top: 1px dotted #94b49e;
+      // border-top: 1px dotted var(--portfolio-main-color);
       font-size: r(14);
     }
   }

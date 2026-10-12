@@ -84,7 +84,10 @@ img {
   --fixed-header: 64px;
   --textshadow: 0 0 20px rgba(0, 0, 0, 0.4);
   --boxshadow: 8px 16px 30px rgba(0, 0, 0, 0.1);
-  --portfolio-green:#1e8821;
+  --portfolio-green:#1f8676;
+  --portfolio-green-light:#d5f6ea;
+  --portfolio-bg:var(--portfolio-green-light);
+  --portfolio-main-color:var(--portfolio-green);
 }
 
 /* 実高さに合わせて調整 */
@@ -699,7 +702,7 @@ body:has(.portfolio) {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background: #f1f9f6;
+  background: var(--portfolio-bg);
   color: #333;
 }
 @media (max-width: 768px) {
@@ -804,7 +807,7 @@ body:has(.portfolio) {
           transform: translateX(-50%);
   width: 40px;
   height: 8px;
-  background: var(--portfolio-green);
+  background: var(--portfolio-main-color);
   border-radius: 8px;
 }
 @media (max-width: 768px) {
@@ -838,7 +841,7 @@ body:has(.portfolio) {
   }
 }
 .portfolio .heading_04 {
-  color: var(--portfolio-green);
+  color: var(--portfolio-main-color);
   font-weight: 700;
   margin-bottom: 16px;
   margin-top: 40px;
@@ -850,16 +853,16 @@ body:has(.portfolio) {
   text-align: center;
 }
 .portfolio .linktext {
-  color: var(--portfolio-green);
-  border-bottom: 1px solid var(--portfolio-green);
+  color: var(--portfolio-main-color);
+  border-bottom: 1px solid var(--portfolio-main-color);
 }
 .portfolio .label {
-  background: var(--portfolio-green);
-  color: #fff;
-  border-radius: 4px;
   padding: 2px 8px;
+  border-radius: 100vw;
   font-weight: 500;
   font-size: 0.8em;
+  color: var(--portfolio-main-color);
+  background: var(--portfolio-bg);
 }
 .portfolio .header {
   width: 90%;
@@ -983,7 +986,7 @@ body:has(.portfolio) {
 .portfolio .header .nav__item > a:hover,
 .portfolio .header .nav__submenu-toggle:hover {
   opacity: 1;
-  color: var(--portfolio-green);
+  color: var(--portfolio-main-color);
 }
 .portfolio .header {
   /* サブメニュー（PCはホバー/フォーカスで開く） */
@@ -1076,7 +1079,7 @@ body:has(.portfolio) {
         -ms-flex-align: center;
             align-items: center;
     gap: 4px;
-    background: var(--portfolio-green);
+    background: var(--portfolio-main-color);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -1262,7 +1265,7 @@ body:has(.portfolio) {
   width: 16px;
   height: 4px;
   border-radius: 8px;
-  background: var(--portfolio-green);
+  background: var(--portfolio-main-color);
   top: 13px;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -1282,7 +1285,6 @@ body:has(.portfolio) {
 .portfolio .project__about {
   margin-bottom: 12px;
   padding: 16px;
-  border-top: 1px dotted #94b49e;
   font-size: 0.875rem;
 }
 .portfolio .thankyou {
