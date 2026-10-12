@@ -841,9 +841,9 @@ body:has(.portfolio) {
   }
 }
 .portfolio .heading_04 {
-  color: var(--portfolio-main-color);
+  color: #333;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   margin-top: 40px;
 }
 .portfolio ul + h4 {
@@ -1283,8 +1283,15 @@ body:has(.portfolio) {
   margin-bottom: 12px;
 }
 .portfolio .project__about {
-  margin-bottom: 12px;
   padding: 16px;
+  font-size: 0.875rem;
+}
+.portfolio .project__meta-list {
+  padding-left: 0.5rem;
+  border-left: 2px solid #abc6bf;
+  font-size: 0.8125rem;
+}
+.portfolio .project .linktext {
   font-size: 0.875rem;
 }
 .portfolio .thankyou {

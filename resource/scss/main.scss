@@ -150,9 +150,9 @@ body:has(.portfolio) {
   }
 
   .heading_04 {
-    color: var(--portfolio-main-color);
+    color: #333;
     font-weight: $fw-b;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     margin-top: 40px;
   }
 
@@ -526,9 +526,17 @@ body:has(.portfolio) {
       margin-bottom: 12px;
     }
     &__about {
-      margin-bottom: 12px;
       padding: 16px;
       // border-top: 1px dotted var(--portfolio-main-color);
+      font-size: r(14);
+    }
+    &__meta-list {
+      padding-left: 0.5rem;
+      border-left: 2px solid #abc6bf;
+      font-size: r(13);
+    }
+
+    .linktext {
       font-size: r(14);
     }
   }
